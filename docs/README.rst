@@ -1,5 +1,6 @@
 .. _readme:
-
+This is a forked version of the php-forumula to avoid any breaking changes from upstream
+==========================================================================================
 php-formula
 ===========
 
