@@ -2689,6 +2689,10 @@
       {%- set rh_prefix = 'rh-php{}-'.format(salt['pillar.get']('php:scl_php_version', '')) -%}
       {%- set sclo_prefix = 'sclo-php{}-'.format(salt['pillar.get']('php:scl_php_version', '')) -%}
       {%- set path_suffix = 'opt/rh/rh-php{}/'.format(salt['pillar.get']('php:scl_php_version', '')) -%}
+    {%- elif salt['grains.get']('os') == "Amazon" and salt['pillar.get']('php:use_scl_repo', False) -%}
+      {%- set rh_prefix = 'php{}-'.format(salt['pillar.get']('php:scl_php_version', '')) -%}
+      {%- set sclo_prefix = 'php{}-'.format(salt['pillar.get']('php:scl_php_version', '')) -%}
+      {%- set path_suffix = 'opt/rh/rh-php{}/'.format(salt['pillar.get']('php:scl_php_version', '')) -%}
     {%- else -%}
       {%- set rh_prefix = '' -%}
       {%- set sclo_prefix = '' -%}
