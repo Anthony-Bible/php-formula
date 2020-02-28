@@ -100,10 +100,9 @@ php_redhat_scl_enable_{{ state }}:
     - name: yum-config-manager --enable rhel-server-rhscl-{{ grains['osmajorrelease'] }}-rpms
   {% elif use_scl_repo and grains['os'] == 'Amazon' %}
 php_redhat_scl_enable_{{ state }}:
-  remi.repo:
-    pkg.installed:
-      - sources:
-        - scl-repository: http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+  pkg.installed:
+    - sources:
+      - scl-repository: http://rpms.remirepo.net/enterprise/remi-release-7.rpm
   {% endif %}
 {% endif %}
 
