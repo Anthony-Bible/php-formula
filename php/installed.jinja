@@ -104,7 +104,7 @@ remi-safe_{{ state }}:
     - humanname: Safe Remi RPM repository for Enterprise Linux 7 - $basearch
     - mirrorlist: http://cdn.remirepo.net/enterprise/7/safe/mirror 
     - enabled: True
-    - key_url: https://rpms.remirepo.net/RPM-GPG-KEY-remi
+    - gpgkey: https://rpms.remirepo.net/RPM-GPG-KEY-remi
     - gpgcheck: 1
   {% endif %}
 {% endif %}
