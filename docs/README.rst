@@ -1,8 +1,9 @@
 .. _readme:
- I've added Remi Repo support for amazon linux. It's still a work in progress but my goal is to get it ready for a pull request
- --------------------------------------------------------------------------------------------------------------------------------
-This is a forked version of the php-forumula to avoid any breaking changes from upstream
-------------------------------------------------------------------------------------------
+
+
+I've added Remi Repo support for amazon linux. It's still a work in progress but my goal is to get it ready for a pull request 
+================================================================================================================================
+
 php-formula
 ===========
 
