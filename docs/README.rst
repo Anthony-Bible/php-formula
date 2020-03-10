@@ -1,5 +1,5 @@
 .. _readme:
-This is a forked version of the php-forumula to avoid any breaking changes from upstream
+This is a forked version of the php-forumula to avoid any breaking changes from upstream I've also added Remi Repo support for amazon. It's still a work in progress but my goal is to get it ready for a pull request
 ==========================================================================================
 php-formula
 ===========
